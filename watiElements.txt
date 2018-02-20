@@ -1,0 +1,25 @@
+public static WebElement waitElement(String element) {
+
+		String s = element;
+		By t1 = By.xpath(s);
+		Wait<WebDriver> wait = new FluentWait<>(driver)
+				.withTimeout(60, TimeUnit.SECONDS)
+				.pollingEvery(5, TimeUnit.SECONDS)
+				.ignoring(NoSuchElementException.class);
+		WebElement ele = wait.until(ExpectedConditions.presenceOfElementLocated(t1));
+		return ele;
+	}
+
+	public static List<WebElement> waitElements(String element) {
+		String s = element;
+		By t1 = By.xpath(s);
+		List<WebElement> t = driver.findElements(t1);
+		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
+				.withTimeout(30, TimeUnit.SECONDS)
+				.pollingEvery(5, TimeUnit.SECONDS)
+				.ignoring(NoSuchElementException.class);
+		List<WebElement> foo = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(t1));
+		//.presenceOfAllElementsLocatedBy(t1));
+		System.out.println("size="+foo.size());
+		return foo;
+	}
