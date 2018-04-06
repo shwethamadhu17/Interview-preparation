@@ -128,6 +128,37 @@ public class JavaScriptHelper {
 	public static void javaScriptSendText(WebElement element,String text)
 	{
 		JavascriptExecutor myExecutor = ((JavascriptExecutor) driver);
-		myExecutor.executeScript("arguments[0].value='"+text+"';", element);	}
+		myExecutor.executeScript("arguments[0].value='"+text+"';", element);	
+	}
+	//enable remove Attribute disable
+/*Ex1:	JavascriptExecutor Executor = (JavascriptExecutor) driver;
+ 	WebElement element=driver.findElement(By.xpath(“path”);
+String js1="arguments[0].removeAttribute('disabled');";
+      	 Executor.executeScript(js1, element);
+Ex2:  	String js2 = "arguments[0].style.height='auto'; arguments[0].style.visibility='visible';";
+       	Executor.executeScript(js2, element);
+	
+	
+	1) String script = "window.location = \'"+url+"\'";
+JavascriptExecutor js =(JavascriptExecutor)driver;
+js.executeScript(script)
+
+2)js.executeScript("history.go(0)");
+3) String sText =js.executeScript("return document.title;").toString();
+4) WebElement search =(WebElement) js.executeScript("return document.getElementById('searchBtn');");
+5) String frames = js.executeScript("document.frames.length;").toString();
+6) js.executeScript("arguments[0].scrollIntoView(true);", element);
+7) js.executeScript("window.scrollBy(300,2000)");
+8) js.executeScript("arguments[0].setAttribute('style', arguments[1]);", ele, "background:"
+    + "yellow; color: Red; border: 4px dotted solid yellow;");
+9) js.executeScript("arguments[0].click();",element);
+10) js.executeScript("arguments[0].setAttribute('target','_self');",element); // to open in same tab
+11) js.executeScript("alert('Enter your Facebook crednetials');");
+12) js.executeScript("confirm('Enter your Facebook crednetials');");
+13) js.executeScript("prompt('Enter your crednetials',’Enter domain’);")
+	
+	
+	*/
+
 
 }
