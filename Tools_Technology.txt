@@ -1,5 +1,8 @@
 Software Testing Tool That We Will Use It In Daily Project Development
 
+Tools and technology
+Any Alternative software : https://alternativeto.net/
+
 1) Xenu: Used for link checker tool
 
 https://lnkd.in/f-64-SK
@@ -57,3 +60,25 @@ https://lnkd.in/fYzjRDD
 10)Browser Stack: Used for Compatibility Testing
 
 https://lnkd.in/fUP3_S2
+
+
+
+1)How to test on multiple devices | Mobile and Tablets | Responsive Design Testing
+-> Google developer tool(f12)
+-> Mobiletest.me
+-> quirktools.com/screenfly/
+-> websiteresponsive : http://www.websiteresponsivetest.com/
+-> Viewport Resizer
+2) Performance check using website
+-> https://developers.google.com/speed/pagespeed/insights/
+-->https://tools.pingdom.com
+3)For spelling and broken image link 
+-> https://insites.com/
+4) Check quality, correctness and performance
+-> https://www.webpagetest.org/easy.php
+-> Lighthouse plugin install in chrome -> run url the click on lighthouse plugin it will generate all report
+--> https://www.dareboost.com/
+
+5) Technology Stack
+--> wappalyzer
+--> ExtensionBuiltWith Technology Profile
