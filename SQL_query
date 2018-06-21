@@ -1,0 +1,17 @@
+SQL queries for practice online link
+https://www.w3schools.com/sql/trysql.asp?filename=trysql_update_2
+Table Name : Products, OrderDetails
+1) Highest price from products table
+--> select * from products where price=(select max(price) from products)
+2) Second Highest price from products table
+---> SELECT ProductID,ProductName,SupplierID,CategoryID,Unit,Max(price) FROM Products where price  Not In(select max(price) from products)
+3) select range of product based on id/price
+--> select * from products where ProductID  between 1 and 5
+--> select * from products where price  between 10 and 12
+4) Return productname,higest price(from products table) and Quntity and orderID(from OrderDetais table)
+--> select p.ProductID,p.ProductName,p.SupplierID,p.CategoryID,p.Unit,Max(p.Price),o.OrderID,o.Quantity from products p inner join OrderDetails o on (p.ProductID=o.ProductID)
+--> select p.ProductID,p.ProductName,p.SupplierID,p.CategoryID,p.Unit,p.Price,o.OrderID,o.Quantity from products p inner join OrderDetails o on (p.ProductID=o.ProductID) where price in (select max(price) from products)
+--> select p.ProductID,p.ProductName,p.SupplierID,p.CategoryID,p.Unit,Max(p.Price),o.OrderID,max(o.Quantity) from products p inner join OrderDetails o on (p.ProductID=o.ProductID) where price in (select max(price) from products)
+
+5) select highest Quantity
+select p.ProductID,p.ProductName,p.SupplierID,p.CategoryID,p.Unit,p.Price,o.OrderID,o.Quantity from products p inner join OrderDetails o on (p.ProductID=o.ProductID) where Quantity in (select max(Quantity) from OrderDetails)
