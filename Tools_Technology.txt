@@ -1,0 +1,59 @@
+Software Testing Tool That We Will Use It In Daily Project Development
+
+1) Xenu: Used for link checker tool
+
+https://lnkd.in/f-64-SK
+
+
+
+2) Web Developer Tool: Used for W3C Testing
+
+https://lnkd.in/fExZUpe
+
+
+
+3) Geek Flair: Used for Performance Testing
+
+https://lnkd.in/f8gvRn6
+
+
+
+4) GTMatrix: Used for Performance Testing
+
+https://gtmetrix.com/
+
+
+
+5) IT Tester: Used for Compatibility Testing
+
+https://lnkd.in/fe6g4iz
+
+
+
+6) Web Page Test: Used for Performance Testing
+
+https://lnkd.in/fnck6ec
+
+
+
+7) EMS Data Generator: Used for Generate Data in Database
+
+https://lnkd.in/fWX_znm
+
+
+
+8) Postman: Used for API Testing
+
+https://lnkd.in/fai2kCA
+
+
+
+9) SQL Injection ME: Used for SQL Injection
+
+https://lnkd.in/fYzjRDD
+
+
+
+10)Browser Stack: Used for Compatibility Testing
+
+https://lnkd.in/fUP3_S2
